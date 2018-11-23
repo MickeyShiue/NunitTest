@@ -1,89 +1,27 @@
-# NunitTest
+# NunitTest(專案價構)
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Mickey.Domain  
+* Mickey.DataAccess
+* Mickey.Service 
+* Mickey.Web
+* Mickey.Service.Tests
 
-## Getting Started
+## Domain 專案
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+通常會拿來放 Domain Model、DTO (Data Transfer Object) 等等
 
-### Prerequisites
+## DataAccess 專案
 
-What things you need to install the software and how to install them
+與資料庫溝建立橋樑，用來操作 Select、Create、Update、Delete 等動作，有些人會把 DataAccess 層 與 Domain 層合併為一個專案稱之 Model，內涵 DTO，與資料庫操作等動作
 
-```
-Give examples
-```
+## Service 專案
 
-### Installing
+通常給 Applaction 呼叫，而 Service 層會參考 DataAccess 層去操作資料，Service 通常負責商業邏輯的部分居多，而CURD透過 DataAccess 層來操作，而應用程式只要跟 Service 層產生關聯，無須知道 DataAccess 背後使用哪一種ORM去操作資料，萬一有一天要換資料庫或者ORM，只需修改 DataAccess 層即可，這樣的做法可以讓應用程式避免直接依賴 DataAccess 層
 
-A step by step series of examples that tell you how to get a development env running
+## TEST 專案
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+用來進行 Service 單元測試
+### Using Package
+* [NUnit](http://nunit.org/)
+* [NUnit3TestAdapter](https://github.com/nunit/docs)
+* [NSubstitute](https://www.nuget.org/packages/NSubstitute/) 可以透過套件管理主控台 => Install-Package NSubstitute -Version 3.1.0
