@@ -5,3 +5,5 @@ UnitTest/packages/
 UnitTest/Mickey.Service/obj/
 UnitTest/Mickey.Service.Tests/
 UnitTest/Mickey.Web/obj/
+UnitTest/Mickey.Web/bin/
+UnitTest/Mickey.DataAccess/bin/

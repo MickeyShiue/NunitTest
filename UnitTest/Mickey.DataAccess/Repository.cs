@@ -10,13 +10,15 @@ namespace Mickey.DataAccess
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        private DbContext Context { get; set; }
+       // private DbContext Context { get; set; }
 
         private DbSet<TEntity> DbSet { get; set; }
 
+        private NorthwindContext Context { get; set; }
+
         public Repository() //照理講要用DI，但重點在於測試，這邊就偷懶^^>
         {
-            this.Context = new NorthwindContext(); //照理講不應該這樣寫，如果要做 Transaction 應該要把 Context抽到外面，偷懶^^
+            Context = new NorthwindContext();
             this.DbSet = Context.Set<TEntity>();
         }
 
