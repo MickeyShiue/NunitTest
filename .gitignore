@@ -1,2 +1,4 @@
 UnitTest/.vs/
 UnitTest/Mickey.Domain/obj/
+UnitTest/Mickey.DataAccess/obj/
+UnitTest/packages/
