@@ -1,6 +1,8 @@
-# Project Title
+# NunitTest
 
-One Paragraph of project description goes here
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
 
 ## Getting Started
 
