@@ -12,7 +12,7 @@
 
 ## DataAccess 專案
 
-與資料庫溝建立橋樑，用來操作 Select、Create、Update、Delete 等動作，有些人會把 DataAccess 層 與 Domain 層合併為一個專案稱之 Model，內涵 DTO，與資料庫操作等動作
+與資料庫溝建立橋樑，用來操作 Select、Create、Update、Delete 等動作，有些人會把 DataAccess 層 與 Domain 層合併為一個專案稱之 Model，內含 DTO，與資料庫操作等動作
 
 ## Service 專案
 
