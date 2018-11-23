@@ -1,4 +1,4 @@
-# NunitTest(專案價構)
+# NunitTest(專案架構)
 
 * Mickey.Domain  
 * Mickey.DataAccess
