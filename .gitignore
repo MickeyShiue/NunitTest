@@ -3,7 +3,8 @@ UnitTest/Mickey.Domain/obj/
 UnitTest/Mickey.DataAccess/obj/
 UnitTest/packages/
 UnitTest/Mickey.Service/obj/
-UnitTest/Mickey.Service.Tests/
 UnitTest/Mickey.Web/obj/
 UnitTest/Mickey.Web/bin/
 UnitTest/Mickey.DataAccess/bin/
+UnitTest/Mickey.Service.Tests/bin/
+UnitTest/Mickey.Service.Tests/obj/
