@@ -16,7 +16,7 @@
 
 ## Service 專案
 
-通常給 Applaction 呼叫，而 Service 層會參考 DataAccess 層去操作資料，Service 通常負責商業邏輯的部分居多，而 CURD 透過 DataAccess 層來操作，而應用程式只要跟 Service 層產生關聯，無須知道 DataAccess 背後使用哪一種ORM去操作資料，萬一有一天要換資料庫或者ORM，只需修改 DataAccess 層即可，這樣的做法可以讓應用程式避免直接依賴 DataAccess 層
+通常給 Application 呼叫，而 Service 層會參考 DataAccess 層去操作資料，Service 通常負責商業邏輯的部分居多，而 CURD 透過 DataAccess 層來操作，而應用程式只要跟 Service 層產生關聯，無須知道 DataAccess 背後使用哪一種ORM去操作資料，萬一有一天要換資料庫或者ORM，只需修改 DataAccess 層即可，這樣的做法可以讓應用程式避免直接依賴 DataAccess 層
 
 ## TEST 專案
 
